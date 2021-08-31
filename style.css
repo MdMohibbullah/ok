@@ -1,0 +1,73 @@
+.main{
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     margin-top: 100px;
+    
+}
+
+.animation-btn{
+  position: relative;
+
+}
+.animation-btn::before{
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: -12px;
+        width: 110px;
+        height: 110px;
+        background: red;
+        border-radius: 50%;
+        margin: auto;
+        animation: btn 1.5s ease-in-out infinite;
+}
+.animation-btn a{}
+.animation-btn a img{
+    width: 90px;
+    height: 90px;
+    
+}
+
+
+
+
+@keyframes btn{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+.main-2{
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.div1{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    animation: m 1.5s ease-in-out infinite;
+}
